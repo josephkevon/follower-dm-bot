@@ -2,12 +2,12 @@ from instagrapi import Client
 import os
 import time
 
-USERNAME = "efficodesystem"
-PASSWORD = "jojomafia"
+USERNAME = # your instagram username
+PASSWORD = # your instagram password
 SETTINGS_FILE = f"{USERNAME}_settings.json"
 LOG_FILE = F"{USERNAME}already_messaged.txt"
-DM_LIMIT = 2  # <-- Set your DM limit here
-DELAY_SECONDS = 3  # <-- Delay between DMs to avoid spam detection
+DM_LIMIT =   # <-- Set your DM limit here
+DELAY_SECONDS = 5  # <-- Delay between DMs to avoid spam detection
 TARGET = USERNAME
 MESSAGE = "Hello! This is a test message."
 
@@ -60,3 +60,4 @@ with open(LOG_FILE, "a") as log_file:
             time.sleep(DELAY_SECONDS)
         except Exception as e:
             print(f"❌ Failed to message @{username}: {e}")
+
